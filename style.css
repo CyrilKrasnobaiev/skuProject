@@ -1,0 +1,297 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #686868;
+    background-color: #FFF;
+}
+
+.header {
+    background-color: rgba(252, 33, 158, 0.12);
+    border: 1px solid #C5DBEC;
+    position: relative;
+    display: block;
+}
+
+.header section {
+    padding-top: 2px;
+    height: 42px;
+    margin: 0px auto;
+}
+
+section {
+    display: block;
+}
+
+#logo {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    font-size: 20px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #08C;
+}
+
+ul, ol {
+    padding: 0px;
+    margin: 0px;
+    list-style: outside none none;
+}
+
+.header #logo img {
+    height: 40px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0px none;
+}
+.header nav {
+    float: left;
+    line-height: 30px;
+    display: block;
+    border-bottom: 1px solid black;
+    position: relative;
+    width: 100%;
+
+}
+
+.header nav ul li:hover{
+    background-color: #b2ff68;
+}
+
+#sku_function{
+    display: none;
+    border-bottom: 1px solid black;
+    float: left;
+    line-height: 30px;
+    position: relative;
+    width: 100%;
+}
+
+#sku_function div{
+    border-right: 1px solid black;
+    background-color: #fdfeba;
+    border-radius: 4px;
+    float: left;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0 30px;
+}
+
+#sku_createTable{
+    display: none;
+    border-bottom: 1px solid black;
+    float: left;
+    line-height: 30px;
+    position: relative;
+    width: 100%;
+}
+
+#sku_createTable div{
+    border-right: 1px solid black;
+    background-color: #fef4ef;
+    border-radius: 4px;
+    float: left;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0 30px;
+}
+
+#sku_add{
+     display: none;
+     border-bottom: 1px solid black;
+     float: left;
+     line-height: 30px;
+     position: relative;
+     width: 100%;
+ }
+
+#sku_save{
+    display: none;
+    border-bottom: 1px solid black;
+    float: left;
+    line-height: 30px;
+    position: relative;
+    width: 100%;
+}
+
+#sku_alterTable{
+    display: none;
+    border-bottom: 1px solid black;
+    float: left;
+    line-height: 30px;
+    position: relative;
+    width: 100%;
+}
+
+#sku_deleteTable{
+    display: none;
+    border-bottom: 1px solid black;
+    float: left;
+    line-height: 30px;
+    position: relative;
+    width: 100%;
+}
+
+#scu_card_form1{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #c4fed4;
+    border-radius: 4px;
+    float: left;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0 30px;
+    width: 100%;
+}
+
+#scu_card_form2{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: #c4fed4;
+    border-radius: 4px;
+    float: left;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0 30px;
+    width: 100%;
+}
+
+
+
+#login ul{
+    float: right;
+    margin-left: 10px;
+}
+
+#login li{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;;
+}
+
+.username {
+    padding: 5px;
+    background: #8DB9DB none repeat scroll 0% 0%;
+    float: left;
+    border-radius: 4px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: normal;
+    color: #2E6E9E;
+}
+
+#usermenu .logout {
+    padding: 5px;
+}
+
+#auth li {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+li {
+    line-height: 20px;
+}
+
+#usermenu .logout i {
+    margin: 0px;
+    font-size: 20px;
+    color: #2E6E9E;
+    border-radius: 4px;
+    line-height: 28px;
+    border: 1px solid #CCC;
+}
+
+.header nav li {
+    float: left;
+    margin-right: 15px;
+    border-radius: 4px;
+    line-height: 30px;
+    background-color: #CCCCCC;
+    margin: 10px;
+    padding: 0px 30px 0px 30px;
+}
+
+#filter {
+    float: right;
+    margin-right: 15px;
+    border-radius: 6px;
+    line-height: 30px;
+    background-color: rgba(123, 186, 255, 0.02);
+    margin: 10px;
+    border: 1px solid #CCC;
+}
+
+.functionality{
+    float: left;
+    line-height: 30px;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.functionality ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: outside none none;
+}
+
+.functionality ul li{
+    float: left;
+    line-height: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 0px 0px 0px;
+    padding: 0px 30px 0px 30px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#checkbox {
+    float: left;
+    margin: 20px 0px 0px 89px;
+}
+
+#div
+{
+    width:100px;
+    height:100px;
+}
+
+#link
+{
+    cursor:pointer;
+}
+
+#link:hover
+{
+    color:red;
+    font-weight:bold;
+}
+
+.dropdown-link {
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    float: left;
+    line-height: 30px;
+    margin: 20px 0 0;
+    padding: 0 30px;
+    position: relative;
+    outline: 0 none;
+}
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="cp1251">
+    <title>SKU page</title>
+    <meta content="SKU" name="description">
+    <meta content="sku" name="keywords">
+    <meta content="Cyril Krasnobaiev" name="author">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="skuFunctions.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <section>
+            <div id="login">
+                <ul id="usermenu">
+                    <li class="username">
+                        <a href="/">
+                            <span>Manager Kovalev</span>
+                        </a>
+                    </li>
+                    <li class="logout">
+                        <a href="/">
+                            <i class="exitlog" title="Exit">Выход</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h1 id=logo">
+                <a href="/">
+                    <img alt="Logo" src="/">
+                </a>
+                <span>Страница SCU</span>
+            </h1>
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <div>Задачи</div>
+                </li>
+                <li>
+                    <div>Торговые точки</div>
+                </li>
+                <label><li class="sku_create">
+                    <div>SKU</div>
+                </li></label>
+                <li>
+                    <div>Пользователи</div>
+                </li>
+                <li>
+                    <div>Отчеты</div>
+                </li>
+                <li>
+                    <div>Права доступа</div>
+                </li>
+                <li>
+                    <div>Настройка</div>
+                </li>
+                    <input type="checkbox" id="checkbox">
+                <li id="filter">
+                    <div>Filter</div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="sku_function">
+        <div id="sku_review">Просмотр</div>
+        <div id="sku_building">Создание</div>
+        <div id="sku_editing">Редактирование</div>
+    </div>
+    <div id="sku_createTable">
+        <div id="sku_table">SKU</div>
+        <div id="sku_card">Карточка SKU</div>
+    </div>
+    <div>
+        <input type="button" id="sku_add" value="Добавить">
+        <input id="sku_save" type="submit" form="scu_card_form1" value="Сохранить" onClick="document.getElementById('scu_card_form1').value='';">
+        <input id="sku_alterTable" type="submit" value="Добавить форму">
+        <input id="sku_deleteTable" type="submit" value="Удалить таблицу в Базе Данных">
+    </div>
+    <div id="scu_card_form" style="display: none;">
+        <form method="post" id="scu_card_form1" action="createTableInMysql.php">
+            <div>
+                <div>Название<br>
+                    <input checked="" type="text" name="name_text" id="name_text"><br><br>
+                </div>
+                <div>Тип данных<br>
+                    <select name="select_variant">
+                        <option value="number" name="number">Номер</option>
+                        <option value="digit" name="digit">Число</option>
+                        <option value="int_digit" name="int_digit">Целое число</option>
+                        <option value="text" name="text">Текст</option>
+                        <option value="date" name="date">Дата</option>
+                        <option value="time" name="time">Время</option>
+                        <option value="checkbox1" name="checkbox1">Чекбокс</option>
+                        <option value="status" name="status">Статус</option>
+                        <option value="list" name="list">Список</option>
+                        <option value="photo" name="photo">Фото</option>
+                        <option value="user" name="user">Пользователь</option>
+                    </select>
+                </div>
+                <div>Обязательно<br>
+                    <input type="checkbox" class="mandatory" name="checkbox_name">
+                </div>
+            </div>
+            <input type="submit" value="Добавить">
+            <input type="submit" value="Удалить">
+        </form>
+    </div>
+<p></p>
+    <p></p>
+</body>
+</html>
+
