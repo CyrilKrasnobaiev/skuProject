@@ -1,6 +1,6 @@
 <?php
-mysql_connect("localhost", "root", "babay2008") //параметры в скобках ("хост", "имя пользователя", "пароль")
+mysql_connect() //ГЇГ Г°Г Г¬ГҐГІГ°Г» Гў Г±ГЄГ®ГЎГЄГ Гµ ("ГµГ®Г±ГІ", "ГЁГ¬Гї ГЇГ®Г«ГјГ§Г®ГўГ ГІГҐГ«Гї", "ГЇГ Г°Г®Г«Гј")
 or die("<p>Mistake with connecting to database" . mysql_error() . "</p>");
-mysql_select_db("sku") //параметр в скобках ("имя базы, с которой соединяемся")
+mysql_select_db("sku") //ГЇГ Г°Г Г¬ГҐГІГ° Гў Г±ГЄГ®ГЎГЄГ Гµ ("ГЁГ¬Гї ГЎГ Г§Г», Г± ГЄГ®ГІГ®Г°Г®Г© Г±Г®ГҐГ¤ГЁГ­ГїГҐГ¬Г±Гї")
 or die("<p>Mistake with choosing of database!". mysql_error() . "</p>");
 ?>
