@@ -1,9 +1,9 @@
 <?php
-// Äàííûå äëÿ mysql ñåðâåðà
-$dbhost = "localhost";         // Õîñò
-$dbuser = "root";             // Èìÿ ïîëüçîâàòåëÿ
-$dbpassword = "babay2008";    // Ïàðîëü
-$dbname = "sku";          // Èìÿ áàçû äàííûõ
+// Ã„Ã Ã­Ã­Ã»Ã¥ Ã¤Ã«Ã¿ mysql Ã±Ã¥Ã°Ã¢Ã¥Ã°Ã 
+$dbhost = "----";         // Ã•Ã®Ã±Ã²
+$dbuser = "----";             // ÃˆÃ¬Ã¿ Ã¯Ã®Ã«Ã¼Ã§Ã®Ã¢Ã Ã²Ã¥Ã«Ã¿
+$dbpassword = "------";    // ÃÃ Ã°Ã®Ã«Ã¼
+$dbname = "-----";          // ÃˆÃ¬Ã¿ Ã¡Ã Ã§Ã» Ã¤Ã Ã­Ã­Ã»Ãµ
 
 echo 'Delete Table<br>';
 $link = mysql_connect($dbhost, $dbuser, $dbpassword);
