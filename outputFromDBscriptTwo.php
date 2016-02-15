@@ -1,29 +1,29 @@
 <?php
-// определяем начальные данные
-$db_host = 'localhost';
-$db_name = 'sku';
-$db_username = 'root';
-$db_password = 'babay2008';
-$db_table_to_show = 'sku_maintable';
+// Г®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГ¬ Г­Г Г·Г Г«ГјГ­Г»ГҐ Г¤Г Г­Г­Г»ГҐ
+$db_host = '----';
+$db_name = '-----';
+$db_username = '----';
+$db_password = '----';
+$db_table_to_show = '------';
 
 
 $result = mysql_query($sql);
 
-// соединяемся с сервером базы данных
+// Г±Г®ГҐГ¤ГЁГ­ГїГҐГ¬Г±Гї Г± Г±ГҐГ°ГўГҐГ°Г®Г¬ ГЎГ Г§Г» Г¤Г Г­Г­Г»Гµ
 $connect_to_db = mysql_connect($db_host, $db_username, $db_password)
 or die("Could not connect: " . mysql_error());
 
-// подключаемся к базе данных
+// ГЇГ®Г¤ГЄГ«ГѕГ·Г ГҐГ¬Г±Гї ГЄ ГЎГ Г§ГҐ Г¤Г Г­Г­Г»Гµ
 mysql_select_db($db_name, $connect_to_db)
 or die("Could not select DB: " . mysql_error());
 
 
 
-// выбираем все значения из таблицы "Contacts"
+// ГўГ»ГЎГЁГ°Г ГҐГ¬ ГўГ±ГҐ Г§Г­Г Г·ГҐГ­ГЁГї ГЁГ§ ГІГ ГЎГ«ГЁГ¶Г» "Contacts"
 $qr_result = mysql_query("select * from " . $db_table_to_show)
 or die(mysql_error());
 
-// выводим на страницу сайта заголовки HTML-таблицы
+// ГўГ»ГўГ®Г¤ГЁГ¬ Г­Г  Г±ГІГ°Г Г­ГЁГ¶Гі Г±Г Г©ГІГ  Г§Г ГЈГ®Г«Г®ГўГЄГЁ HTML-ГІГ ГЎГ«ГЁГ¶Г»
 echo '<table border="1">';
 echo '<thead>';
 echo '<tr>';
@@ -34,7 +34,7 @@ echo '</tr>';
 echo '</thead>';
 echo '<tbody>';
 
-// выводим в HTML-таблицу все данные клиентов из таблицы MySQL
+// ГўГ»ГўГ®Г¤ГЁГ¬ Гў HTML-ГІГ ГЎГ«ГЁГ¶Гі ГўГ±ГҐ Г¤Г Г­Г­Г»ГҐ ГЄГ«ГЁГҐГ­ГІГ®Гў ГЁГ§ ГІГ ГЎГ«ГЁГ¶Г» MySQL
 while($data = mysql_fetch_array($qr_result)){
     echo '<tr>';
     echo '<td>' . $data['id'] . '</td>';
@@ -46,6 +46,6 @@ while($data = mysql_fetch_array($qr_result)){
 echo '</tbody>';
 echo '</table>';
 
-// закрываем соединение с сервером  базы данных
+// Г§Г ГЄГ°Г»ГўГ ГҐГ¬ Г±Г®ГҐГ¤ГЁГ­ГҐГ­ГЁГҐ Г± Г±ГҐГ°ГўГҐГ°Г®Г¬  ГЎГ Г§Г» Г¤Г Г­Г­Г»Гµ
 mysql_close($connect_to_db);
 ?>
